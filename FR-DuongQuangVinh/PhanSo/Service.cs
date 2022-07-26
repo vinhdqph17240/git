@@ -11,7 +11,7 @@ namespace PhanSo
         PhanSo _PhanSo = new PhanSo();
         float _UCLN;
         public void Nhap()
-        {         
+        {
             do
             {
                 Console.WriteLine("Nhập tử:");
@@ -22,24 +22,15 @@ namespace PhanSo
                 Console.WriteLine("Nhập mẫu:");
                 _PhanSo.Mau = Convert.ToInt32(Console.ReadLine());
             } while (_PhanSo.Mau <= 0);
-            
+
         }
         public void Xuat()
         {
             _PhanSo.inRaManHinh();
         }
-        public void RutGon()
+        public int UCLN(int tu, int mau)
         {
-            if (_PhanSo.Tu == null)
-            {
-                Console.WriteLine("không có phân số để rút gọn vui lòng nhập phân số");
-            }
-            else
-            {
-
-            
-            float tu = _PhanSo.Tu;
-            float mau = _PhanSo.Mau;
+            int UCLN = 0;
             while (tu != mau)
             {
                 if (tu > mau)
@@ -51,16 +42,41 @@ namespace PhanSo
                     mau = mau - tu;
                 }
             }
-            _UCLN = tu;
-            _PhanSo.Tu = _PhanSo.Tu / _UCLN;
-            _PhanSo.Mau = _PhanSo.Mau / _UCLN;
-            Console.WriteLine("phân số sau khi rút gọn");
-            _PhanSo.inRaManHinh();
+            return UCLN;
+        }
+        public void RutGon()
+        {
+            if (_PhanSo.Tu == null)
+            {
+                Console.WriteLine("không có phân số để rút gọn vui lòng nhập phân số");
+            }
+            else
+            {
+
+
+                float tu = _PhanSo.Tu;
+                float mau = _PhanSo.Mau;
+                while (tu != mau)
+                {
+                    if (tu > mau)
+                    {
+                        tu = tu - mau;
+                    }
+                    else
+                    {
+                        mau = mau - tu;
+                    }
+                }
+                _UCLN = tu;
+                _PhanSo.Tu = _PhanSo.Tu / _UCLN;
+                _PhanSo.Mau = _PhanSo.Mau / _UCLN;
+                Console.WriteLine("phân số sau khi rút gọn");
+                _PhanSo.inRaManHinh();
             }
         }
         public void CongHaiPhanSo()
         {
-            PhanSo sumPhanSo= new PhanSo();
+            PhanSo sumPhanSo = new PhanSo();
 
             PhanSo PhanSo1 = new PhanSo();
             do
@@ -296,7 +312,7 @@ namespace PhanSo
                 }
 
             }
-            else if(PhanSo1.Tu == PhanSo2.Tu)
+            else if (PhanSo1.Tu == PhanSo2.Tu)
             {
                 if (PhanSo1.Mau > PhanSo2.Mau)
                 {
@@ -337,6 +353,32 @@ namespace PhanSo
                 }
 
             }
+        }
+        public void NhapDayPhanSo()
+        {
+            int tt = 1;
+
+            Console.WriteLine("mời nhập số lượng phân số muốn có trong dãy");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[,] array = new int[2, n];
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine("phần tử array[{0},{1}] là:", i + 1, j + 1);
+                    array[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine("tử số và  mấu số thứ {0} lần lượt là:", j+1);
+                for (int i = 0; i < 2; i++)
+                {
+                    Console.WriteLine(array[i, j]);
+                }
+            }
+
+
         }
     }
 }

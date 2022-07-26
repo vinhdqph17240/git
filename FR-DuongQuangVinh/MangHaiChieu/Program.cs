@@ -14,7 +14,7 @@ namespace MangHaiChieu
             int[,] arrayHaiChieu = new int[n,m];
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine("mảng {0}", i+1);
+                
                 for (int j = 0; j < m; j++)
                 {
                     Console.WriteLine("phần tử arrayHaiChieu[{0},{1}] là:",i+1,j+1);
