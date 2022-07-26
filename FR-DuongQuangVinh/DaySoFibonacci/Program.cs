@@ -6,6 +6,7 @@ namespace DaySoFibonacci
     {
         static void Main(string[] args)
         {
+
             int n;
             Console.WriteLine("Mời nhập n số đầu tiên của dãy số Fibonacci");
             n = Convert.ToInt32(Console.ReadLine());

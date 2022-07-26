@@ -13,7 +13,7 @@ namespace PhanSo
             /*sr.CongHaiPhanSo();
             sr.truHaiPhanSo();*/
             /*sr.nhanHaiPhanSo();*/
-            sr.RutGonDayPhanSo();
+            sr.NhapDayPhanSo();
         }
     }
 }

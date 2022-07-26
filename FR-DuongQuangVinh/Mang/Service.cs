@@ -14,6 +14,7 @@ namespace Mang
 
         public void NhapMang()
         {
+
             Console.WriteLine("mời nhập số lượng muốn có trong mảng");
             _N = Convert.ToInt32(Console.ReadLine());
             _arrayN = new int[_N];
