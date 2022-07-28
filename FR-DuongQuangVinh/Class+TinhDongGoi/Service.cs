@@ -11,7 +11,10 @@ namespace Class_TinhDongGoi
 		private int _input;
 		private Account _account;
 		private List<Account> _lstAccount = new List<Account>();
-		public void Add()
+		private string _userName;
+		private string _passWord;
+		private bool a;
+		public void AddCustome()
 		{
 			Console.WriteLine("Mời bạn nhập số lượng muốn tạo account: ");
 			_input = Convert.ToInt32(Console.ReadLine());
@@ -24,10 +27,31 @@ namespace Class_TinhDongGoi
 				_account.Password = Console.ReadLine();
 				_lstAccount.Add(_account);
 			}
-			foreach (var x in _lstAccount)
-			{
-				x.inRaManHinh();
-			}
+			
 		}
+		public void GetDetails()
+        {
+            foreach (var x in _lstAccount)
+            {
+				x.inRaManHinh();
+            }
+        }
+		public bool LogOn()
+        {
+			Console.WriteLine("Mời bạn nhập username để đăng nhập: ");
+			_userName = Console.ReadLine();
+			Console.WriteLine("Mời bạn nhập password để đăng nhập: ");
+			_passWord = Console.ReadLine();
+            if (_lstAccount.Any(c=>c.Username == _userName && c.Password == _passWord))
+            {
+				a = true;
+            }
+            else
+            {
+				a = false;
+            }
+			return a;
+		}
+
 	}
 }

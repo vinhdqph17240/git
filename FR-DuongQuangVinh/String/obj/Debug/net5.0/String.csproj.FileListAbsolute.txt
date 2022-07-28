@@ -13,3 +13,4 @@ C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\String\obj\Deb
 C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\String\obj\Debug\net5.0\ref\String.dll
 C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\String\obj\Debug\net5.0\String.pdb
 C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\String\obj\Debug\net5.0\String.genruntimeconfig.cache
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\String\obj\Debug\net5.0\String.csproj.AssemblyReference.cache

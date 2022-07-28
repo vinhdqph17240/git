@@ -7,7 +7,16 @@ namespace Class_TinhDongGoi
         static void Main(string[] args)
         {
             Service _sr = new Service();
-            _sr.Add();
+            _sr.AddCustome();
+            if (_sr.LogOn())
+            {
+                Console.WriteLine("dang nhap thanh cong");
+            }
+            else
+            {
+                Console.WriteLine("sai tk hoac mnk");
+            }
+            
         }
     }
 }
