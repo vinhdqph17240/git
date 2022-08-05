@@ -9,10 +9,10 @@ namespace Bai5TestWeed1
     class Service
     {
         private int? _hieuHaiSo;
-        private int[] arr = new int[100];
-        private string[] dayArr = new string[100];
-        private int  sum = 0 ;
-        private int viTriMang = 0 ,x;
+        private int[] _arr = new int[100];
+        private string[] _dayArr = new string[100];
+        private int  _sum = 0 ;
+        private int _viTriMang = 0 ,_x;
         public  int SumOfLongestArithmeticSequence(int[] sequence)
         {
             for (int i = 0; i < sequence.Length; i++)
@@ -24,26 +24,26 @@ namespace Bai5TestWeed1
                         if (_hieuHaiSo == null)
                         {
                             _hieuHaiSo = sequence[k] - sequence[i];
-                            dayArr[viTriMang] = sequence[i] + " " + sequence[k];
-                            arr[viTriMang] = sequence[i] + sequence[k];
-                            x = k;
+                            _dayArr[_viTriMang] = sequence[i] + " " + sequence[k];
+                            _arr[_viTriMang] = sequence[i] + sequence[k];
+                            _x = k;
                             if (k == sequence.Length - 1)
                             {
                                 _hieuHaiSo = null;
-                                viTriMang++;
+                                _viTriMang++;
                             }
                         }
                         else
                         {
-                            if (sequence[k] - sequence[x] == _hieuHaiSo)
+                            if (sequence[k] - sequence[_x] == _hieuHaiSo)
                             {
-                                dayArr[viTriMang] += " " + sequence[k];
-                                arr[viTriMang] += sequence[k];
-                                x = k;
+                                _dayArr[_viTriMang] += " " + sequence[k];
+                                _arr[_viTriMang] += sequence[k];
+                                _x = k;
                                 if (k == sequence.Length - 1)
                                 {
                                     _hieuHaiSo = null;
-                                    viTriMang++;
+                                    _viTriMang++;
                                 }
                             }
                             else
@@ -51,7 +51,7 @@ namespace Bai5TestWeed1
                                 if (k == sequence.Length - 1)
                                 {
                                     _hieuHaiSo = null;
-                                    viTriMang++;
+                                    _viTriMang++;
                                 }
                                 
                             }
@@ -60,26 +60,26 @@ namespace Bai5TestWeed1
                     }
                 }
             }
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < _arr.Length; i++)
             {
-                if (arr[i] != null)
+                if (_arr[i] != 0)
                 {
-                    if (arr[i] > sum)
+                    if (_arr[i] > _sum)
                     {
-                        sum = arr[i];
+                        _sum = _arr[i];
                     }
                 }
             }
-            for (int i = 0; i < dayArr.Length; i++)
+            for (int i = 0; i < _dayArr.Length; i++)
             {
-                if (dayArr[i] != null)
+                if (_dayArr[i] != null)
                 {
-                    Console.WriteLine(dayArr[i]);
+                    Console.WriteLine(_dayArr[i]);
                 }
                 
 
             }
-            return sum;
+            return _sum;
         }
     }
 }
