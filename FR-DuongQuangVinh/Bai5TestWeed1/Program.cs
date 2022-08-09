@@ -8,7 +8,7 @@ namespace Bai5TestWeed1
         {
             int[] arr = new int[] { 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 6 };
             Service service = new Service();
-            Console.WriteLine("Tổng lớn nhất là:",service.SumOfLongestArithmeticSequence(arr));
+            Console.WriteLine("Tổng lớn nhất là:"+ service.SumOfLongestArithmeticSequence(arr));
         }
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\bin\Debug\net5.0\File IO.exe
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\bin\Debug\net5.0\File IO.deps.json
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\bin\Debug\net5.0\File IO.runtimeconfig.json
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\bin\Debug\net5.0\File IO.runtimeconfig.dev.json
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\bin\Debug\net5.0\File IO.dll
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\bin\Debug\net5.0\ref\File IO.dll
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\bin\Debug\net5.0\File IO.pdb
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.AssemblyInfo.cs
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.dll
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\ref\File IO.dll
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.pdb
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\File IO\obj\Debug\net5.0\File IO.genruntimeconfig.cache
