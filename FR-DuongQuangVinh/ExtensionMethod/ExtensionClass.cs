@@ -8,12 +8,12 @@ namespace ExtensionMethod
 {
     public static class ExtensionClass
     {
-        public static List<People> WhereExtension(this List<People> peoples, string s)
+        public static List<T> WhereExtension<T>(this List<T> peoples, Func<T,bool> predicate)
         {
-            List<People> lstpeoples = new List<People>();
+            List<T> lstpeoples = new List<T>();
             foreach (var x in peoples)
             {
-                if (x.Sex == s || x.Name == s || x.NumberPhone == s)
+                if (predicate(x))
                 {
                     lstpeoples.Add(x);
                 }

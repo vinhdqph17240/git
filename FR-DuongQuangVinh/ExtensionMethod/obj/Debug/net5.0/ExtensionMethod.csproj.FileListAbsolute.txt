@@ -13,3 +13,4 @@ C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\ExtensionMetho
 C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\ExtensionMethod\obj\Debug\net5.0\ref\ExtensionMethod.dll
 C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\ExtensionMethod\obj\Debug\net5.0\ExtensionMethod.pdb
 C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\ExtensionMethod\obj\Debug\net5.0\ExtensionMethod.genruntimeconfig.cache
+C:\Users\PC\Desktop\Fresher c# NTQ Solution\git\FR-DuongQuangVinh\ExtensionMethod\obj\Debug\net5.0\ExtensionMethod.csproj.AssemblyReference.cache

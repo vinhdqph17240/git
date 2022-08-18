@@ -8,22 +8,24 @@ namespace ExtensionMethod
     {
         static void Main(string[] args)
         {
-            // linq where binh thuong
+           
             string s;
-            People people = new People();
-            foreach (People pp in people._lstpeoples.Where(c => c.Sex == "Nu"))
+            Employee people = new Employee();
+            // linq where binh thuong
+            foreach (Employee pp in people.lstemployees.Where(c => c.Id > 10))
             {
                 pp.printToTheScreen();
             }
+
             Console.WriteLine("---------------------------------");
             //ExtensionMethod
             Console.WriteLine("Nhap chuoi de tim kiem");
             s = Console.ReadLine();
-            foreach (People pp in people._lstpeoples.WhereExtension(s))
+            foreach (Employee pp in people.lstemployees.WhereExtension(c => c.Name.Contains(s)))
             {
                 pp.printToTheScreen();
             }
-            
+
 
         }
     }
